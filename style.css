@@ -4,6 +4,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Prevent scrollbars from falling hearts */
 }
 
 h1 {
@@ -35,4 +36,20 @@ button {
   background-color: white;
   color: red;
   position: relative;
+}
+
+/* Falling hearts */
+.heart {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  color: crimson;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
 }
