@@ -15,7 +15,20 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
-
+    /* GIF styling */
+    .gif-container1 {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .gif-container1 img {
+      width: 250px; /* adjust size */
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
     /* Teddy couple animation */
     .teddy-couple {
       position: absolute;
@@ -36,6 +49,11 @@
 
   <!-- Teddy couple -->
   <div class="teddy-couple">🧸🧸</div>
+  
+  <!-- Cute GIF -->
+  <div class="gif-container1">
+    <img src="dudu.gif" alt="Cute Teddy GIF">
+  </div>
 
   <!-- Background Music -->
   <audio autoplay loop>
