@@ -11,6 +11,14 @@ h1 {
   color: red;
   margin-top: 15%;
   font-size: 3em;
+  display: inline-block; /* needed for transform */
+  animation: seesaw 2s ease-in-out infinite;
+}
+
+@keyframes seesaw {
+  0%   { transform: rotate(-5deg); }
+  50%  { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
 }
 
 .buttons {
