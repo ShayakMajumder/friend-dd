@@ -14,20 +14,16 @@ function createHeart() {
   heart.classList.add("heart");
   heart.textContent = "❤️";
 
-  // Random horizontal position
   heart.style.left = Math.random() * window.innerWidth + "px";
 
-  // Random animation duration
-  const duration = Math.random() * 3 + 2; // between 2–5 seconds
+  const duration = Math.random() * 3 + 2; // 2–5 seconds
   heart.style.animationDuration = duration + "s";
 
   heartsContainer.appendChild(heart);
 
-  // Remove heart after animation
   setTimeout(() => {
     heart.remove();
   }, duration * 1000);
 }
 
-// Generate hearts continuously
 setInterval(createHeart, 500);

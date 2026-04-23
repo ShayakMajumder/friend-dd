@@ -15,15 +15,15 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
-     /* Teddy couple animation */
+
+    /* Teddy couple animation */
     .teddy-couple {
       position: absolute;
       bottom: 50px;
-      left: -200px; /* start off screen */
+      left: -200px;
       font-size: 3em;
       animation: walkAcross 12s linear infinite;
     }
-
     @keyframes walkAcross {
       from { left: -200px; }
       to { left: 100vw; }
@@ -34,9 +34,12 @@
   <h1>Yay! 🎉 Knew you would say yes! 💕</h1>
   <div class="heart">❤️</div>
 
+  <!-- Teddy couple -->
+  <div class="teddy-couple">🧸🧸</div>
+
   <!-- Background Music -->
   <audio autoplay loop>
-    <source src="bittersweet_symphony.mp3" type="audio/mpeg">
+    <source src="music.mp3" type="audio/mpeg">
   </audio>
 </body>
 </html>
