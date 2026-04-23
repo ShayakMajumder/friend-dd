@@ -1,0 +1,38 @@
+body {
+  background-color: pink;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: red;
+  margin-top: 15%;
+  font-size: 3em;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.yes {
+  background-color: red;
+  color: white;
+}
+
+.no {
+  background-color: white;
+  color: red;
+  position: relative;
+}
